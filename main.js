@@ -45,7 +45,7 @@ const odebirat = (event) => {
 
     const input = document.querySelector('.input')
 	const email = input.value
-	formular.textContent = `Děkujeme za váš zájem. Těšte se na novinky ze světa frontendu a UX na vaší adrese ${email}.`
+	formalar.textContent = `Děkujeme za váš zájem. Těšte se na novinky ze světa frontendu a UX na vaší adrese ${email}.`
 }
 
 const kontrolaPolicka = (event) => {
@@ -55,3 +55,7 @@ const kontrolaPolicka = (event) => {
 		input.classList.remove('alert')
 	}
 }
+
+
+formalar.addEventListener("submit", odebirat)
+input.addEventListener("input", kontrolaPolicka)
